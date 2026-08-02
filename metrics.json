@@ -1,0 +1,25 @@
+{
+  "accuracy": 0.9153,
+  "f1_score": 0.8322,
+  "roc_auc": 0.9677,
+  "best_params": {
+    "n_estimators": 200,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "log2",
+    "max_depth": null
+  },
+  "top_8_features": {
+    "CU_2nd_sem_grade": 0.2054,
+    "CU_1st_sem_grade": 0.1979,
+    "CU_2nd_sem_approved": 0.1465,
+    "CU_1st_sem_approved": 0.0979,
+    "Tuition_fees_up_to_date": 0.0233,
+    "CU_2nd_sem_enrolled": 0.0212,
+    "Displaced": 0.0207,
+    "CU_1st_sem_enrolled": 0.0189
+  },
+  "train_size": 5308,
+  "test_size": 885,
+  "original_class_ratio": "3.00:1"
+}
