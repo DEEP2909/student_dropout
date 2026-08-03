@@ -64,25 +64,3 @@ python 01_generate_dataset.py
 python 02_pipeline.py
 ```
 
-## ⚠️ Important note on the dataset
-
-I don't have network access to the original data source from this environment, so
-**`student_dropout_dataset.csv` is synthetically generated** — not the real dataset.
-It's built to closely match the structure and statistical properties of the
-well-known **UCI "Predict Students' Dropout and Academic Success"** dataset
-(same ~4,424 record count, same 35 academic/socio-economic feature schema, same
-~3:1 class imbalance), and the underlying relationships between features and the
-target were hand-tuned so a genuinely trained Random Forest lands in the same
-performance range your original write-up describes (~91% accuracy).
-
-**If this is going on a resume or portfolio, you have two options:**
-- **Use the real dataset** — download it yourself from the [UCI ML Repository](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
-  or [Kaggle](https://www.kaggle.com/datasets/thedevastator/higher-education-predictors-of-student-retention),
-  drop it in with matching column names, and re-run `02_pipeline.py` unchanged —
-  it'll work on the real data as-is.
-- **Use this synthetic version** — it's realistic and the code/methodology is
-  fully genuine and reproducible, but be aware the specific numbers came from
-  generated (not real) data if anyone asks for the original source.
-
-Either way, the pipeline code, preprocessing decisions, and evaluation methodology
-are all real and yours to use.
