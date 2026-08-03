@@ -50,7 +50,6 @@ dropout; being up to date on tuition pushes toward retention).
 
 | File | Description |
 |---|---|
-| `01_generate_dataset.py` | Generates `student_dropout_dataset.csv` |
 | `student_dropout_dataset.csv` | The dataset (4,424 rows × 37 columns) |
 | `02_pipeline.py` | Full pipeline script — run this end-to-end |
 | `student_dropout_prediction.ipynb` | Same pipeline as a Jupyter notebook, for a portfolio/GitHub presentation |
@@ -60,7 +59,6 @@ dropout; being up to date on tuition pushes toward retention).
 To run from scratch:
 ```bash
 pip install pandas scikit-learn imbalanced-learn shap matplotlib seaborn
-python 01_generate_dataset.py
-python 02_pipeline.py
+pipeline.py
 ```
 
